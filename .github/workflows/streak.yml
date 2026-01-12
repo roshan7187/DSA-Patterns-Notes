@@ -1,0 +1,26 @@
+name: DSA Daily Streak
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-streak:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Update streak log
+        run: |
+          echo "$(date '+%Y-%m-%d') - Commit made" >> streak.log
+
+      - name: Commit streak log
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add streak.log
+          git commit -m "🔥 Daily DSA streak update" || echo "No changes"
+          git push
