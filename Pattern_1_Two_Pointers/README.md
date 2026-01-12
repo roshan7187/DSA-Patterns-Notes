@@ -1,33 +1,30 @@
-# Two Pointers Pattern
+# 🔁 Two Pointers Pattern
 
-## When to Use
-- Sorted arrays / strings
-- Need to find pairs, triplets, or remove duplicates
-- In-place modification
-- Reduce O(n²) → O(n)
+## 🧩 When to Use
+- Sorted arrays or strings
+- Pair / triplet problems
+- In-place modifications
+- Reduce time from O(n²) → O(n)
 
-## Core Idea
+## 🧠 Core Idea
 - Use two indices
 - Move pointers based on condition
-- Either slow–fast or left–right
 
-## Variants
-- Slow–Fast (remove duplicates)
-- Left–Right (pair / triplet problems)
+## 🔄 Variants
+- Slow–Fast pointer
+- Left–Right pointer
 
-## Common Mistakes
+## ⚠️ Common Mistakes
 - Forgetting sorted requirement
-- Wrong pointer movement
+- Incorrect pointer movement
 - Wrong return value
 
-## Time & Space
+## ⏱ Complexity
 - Time: O(n)
 - Space: O(1)
 
-## Problems (from sheet)
+## ✅ Problems
 - Two Sum II
 - Remove Duplicates
-- Squares of Sorted Array
 - 3Sum / 4Sum
 - Dutch National Flag
-
