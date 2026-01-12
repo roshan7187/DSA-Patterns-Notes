@@ -31,6 +31,10 @@ Link: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 Solved On: 2026-01-12
 """
 
+
+from typing import List
+
+
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
         left,right = 0,len(numbers)-1
