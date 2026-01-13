@@ -22,6 +22,9 @@ Explanation:
 Solved On: 2026-01-13
 """
 
+from typing import List
+
+
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
         slow = 0
